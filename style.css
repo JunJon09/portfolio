@@ -58,7 +58,7 @@ main section .main-content .content-inner .self-portofolio_3{
 }
 main section .main-content .content-inner .self-portofolio_4{
   height: 100vh;
-  background-color: indianred;
+  background-color: i;
 }
 
 
@@ -69,7 +69,7 @@ main section .main-content .content-inner .self-portofolio_4{
 
 /* startの文 */
 .start {
-	background: #FFF;
+	background:black;
 	position: fixed;
 	top: 0;
 	left: 0;
