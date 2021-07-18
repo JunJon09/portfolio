@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  min-height: 100%;
+}
+/* */
+main{
+  display: flex; /*横並びに */
+  position: relative; /* 基準値*/
+}
+
+main aside {
+  position:fixed; /*位置を固定 */
+  display: flex;
+  width: 35%;
+  height: 100vh;
+  overflow-y: scroll; /* 縦スクロールさせたければこれ */
+
+}
+main aside .aside-inner{
+  background-color: red;
+  /* asideの中を100%ととしてその中の35% */
+  width: 35%; 
+}
+main aside .aside-picture{
+  background-color: yellow;
+  /* margin-left: 35%;  なんでここは変　なぜここで必要じゃないのか*/
+  width: 65%;
+}
+
+main section{
+  margin-left: 35%;
+  height: 500vh;
+  background-color: green;
+  width: 65%;
+}
+
+
+
+
+
+
+/* startの文 */
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+
+
+
+
