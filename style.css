@@ -41,23 +41,27 @@ main section .main-content .content-inner{
   flex-direction:column;
 }
 main section .main-content .content-inner .self-introduction {
-  height: 100vh;
+  height: 80vh;
   background-color: blue;
+  background-image: url("images/mylogo.png");
+  background-size: contain ;
+  
+  
 }
 main section .main-content .content-inner .self-portofolio_1{
-  height: 100vh;
+  height: 80vh;
   background-color: aqua;
 }
 main section .main-content .content-inner .self-portofolio_2{
-  height: 100vh;
+  height: 80vh;
   background-color: aliceblue;
 }
 main section .main-content .content-inner .self-portofolio_3{
-  height: 100vh;
+  height: 80vh;
   background-color: blueviolet;
 }
 main section .main-content .content-inner .self-portofolio_4{
-  height: 100vh;
+  height: 80vh;
   background-color: i;
 }
 
