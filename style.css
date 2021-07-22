@@ -1,3 +1,4 @@
+/*初期化 */
 *{
   margin: 0;
   padding: 0;
@@ -14,16 +15,120 @@ main{
 
 main aside {
   position:fixed; /*位置を固定 */
-  display: flex;
+  display: flex; /*aside-innerとaside-pictureを並び替える。 */
   width: 35%;
   height: 100vh;
 
 }
 main aside .aside-inner{
-  background-color: red;
   /* asideの中を100%ととしてその中の35% */
   width: 35%; 
+  font-size: 15px;
+	padding-top: 120px;
+	height: 100%;
+/* 元々の配置の色 */
+	color: #033560;
+	background: #fff; 
+	text-align: center;
 }
+
+/*asideの中のaside-innerのとこについて書く。 */
+
+
+#global-nav ul {
+	list-style: none; 
+	padding-left: 0px;
+  padding-top:100px;
+}
+#global-nav .sub-menu-nav{
+  display: block;
+  padding: auto;
+}
+#global-nav > ul > li {
+	position: relative;
+}
+
+#global-nav a {
+  /* 元々の色の文字の色 */
+	color: #033560;
+	text-decoration: none;
+	display: block; 
+	padding: 15px 20px;
+	-moz-transition: background-color .3s linear;
+	-webkit-transition: background-color .3s linear;
+	transition: background-color .3s linear;
+}
+#global-nav .sub-menu.is-active > a,
+#global-nav a:hover {
+  /* マウスを乗せた時の色の話 */
+	color: #fff; 
+	background: #033560;
+}
+
+#global-nav .sub-menu-nav a,
+#global-nav .sub-menu:hover .sub-menu-nav {
+  width: calc(35% * (65 /100));
+}
+
+/* sub-menu icon */
+#global-nav .sub-menu > a {
+	position: relative;
+}
+/* >のアイコンを作ってる */
+#global-nav .sub-menu > a:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 18px;
+	margin: auto;
+	vertical-align: middle;
+	width: 10px;
+	height: 8px;
+  /* アイコンの文字の色を変えている */
+	border-top: 1px solid #033560;
+	border-right: 1px solid #033560;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+
+/* sub-menu */
+/* 元々の配置 */
+#global-nav .sub-menu-nav {
+	position: fixed;
+  /* マウスを乗せた際にででくる場所 */
+	background: #033560;
+	color: #fff;
+	top: 0;
+	padding-top: 200px;
+	left: calc(35% * (35/100));
+	width: 0;
+	height: 100%;
+	overflow: hidden;
+
+	-moz-transition: width .2s ease-out;
+	-webkit-transition: width .2s ease-out;
+	transition: width .2s ease-out;
+}
+#global-nav .sub-menu.is-active > a:after,
+#global-nav .sub-menu > a:hover:after {
+	border-color: #fff;
+}
+#global-nav .sub-menu-nav a {
+	color: #fff;
+  width: calc(65% / (65/100));
+}
+#global-nav .sub-menu-nav a:hover {
+  width: calc(65% / (65/100));
+  /* マウスの乗せた時に表示されるものの乗せたときの色 */
+	color: #033560;
+	background: #fff;
+
+}
+
+
 main aside .aside-picture{
   background-color: yellow;
   /* margin-left: 35%;  なんでここは変　なぜここで必要じゃないのか*/
@@ -90,6 +195,17 @@ main section .main-content .content-inner .self-portofolio_4{
 	z-index: 9999;
 	width: 280px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

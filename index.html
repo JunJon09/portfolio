@@ -18,9 +18,61 @@ crossorigin="anonymous"></script>
     <aside>
       <div class="aside-inner">
         <div class="asie-inner-content">
-          <h2>ロゴとか</h2>
+          <nav id="global-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li class="sub-menu">
+                <a href="#">About</a>
+                <ul class="sub-menu-nav">
+                  <li><a href="#">rgjijrijgorjogjrojo</a></li>
+                  <li><a href="#">About 2</a></li>
+                  <li><a href="#">About 3</a></li>
+                  <li><a href="#">About 4</a></li>
+                  <li><a href="#">About 5</a></li>
+                  <li><a href="#">About 6</a></li>
+                </ul>
+              </li>
+              <li class="sub-menu">
+                <a href="#">Products</a>
+                <ul class="sub-menu-nav">
+                  <li><a href="#">Product 1</a></li>
+                  <li><a href="#">Product 2</a></li>
+                  <li><a href="#">Product 3</a></li>
+                  <li><a href="#">Product 4</a></li>
+                  <li><a href="#">Product 5</a></li>
+                  <li><a href="#">Product 6</a></li>
+                </ul>
+              </li>
+              <li class="sub-menu">
+                <a href="#">Link</a>
+                <ul class="sub-menu-nav">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript">
+(function($) {
+    $(function () {
+        $('.sub-menu').on({
+            'mouseenter': function () {
+                $(this).addClass('is-active');
+            },
+            'mouseleave': function () {
+                $(this).removeClass('is-active');
+            }
+        });
+    });
+})(jQuery);
+</script>
+      
       <div class="aside-picture">
         <div class="aside-picuter-content">
           <h2>動く写真載せたい。</h2>
