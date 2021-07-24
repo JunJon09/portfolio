@@ -25,20 +25,26 @@ main aside .aside-inner{
   width: 35%; 
   font-size: 15px;
 	padding-top: 120px;
+
 	height: 100%;
 /* 元々の配置の色 */
 	color: #033560;
 	background: #fff; 
-	text-align: center;
+	
 }
 
+
 /*asideの中のaside-innerのとこについて書く。 */
+
+header{
+  text-align: center;
+}
 
 
 #global-nav ul {
 	list-style: none; 
 	padding-left: 0px;
-  padding-top:100px;
+  padding-top:20px;
 }
 #global-nav .sub-menu-nav{
   display: block;
@@ -53,10 +59,17 @@ main aside .aside-inner{
 	color: #033560;
 	text-decoration: none;
 	display: block; 
-	padding: 15px 20px;
+	padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
 	-moz-transition: background-color .3s linear;
 	-webkit-transition: background-color .3s linear;
 	transition: background-color .3s linear;
+}
+/* 上のやつでpadding-leftが他の要素にかかってるから
+ここで上書き */
+#global-nav .sub-menu-nav a{
+  padding-left: 0;
 }
 #global-nav .sub-menu.is-active > a,
 #global-nav a:hover {
@@ -107,11 +120,12 @@ main aside .aside-inner{
 	width: 0;
 	height: 100%;
 	overflow: hidden;
-
+  text-align: center;
 	-moz-transition: width .2s ease-out;
 	-webkit-transition: width .2s ease-out;
 	transition: width .2s ease-out;
 }
+
 #global-nav .sub-menu.is-active > a:after,
 #global-nav .sub-menu > a:hover:after {
 	border-color: #fff;
@@ -137,7 +151,7 @@ main aside .aside-picture{
 
 main section{
   margin-left: 35%;
-  height: 500vh;
+  height: 400vh;
   background-color: green;
   width: 65%;
 }
@@ -147,27 +161,50 @@ main section .main-content .content-inner{
 }
 main section .main-content .content-inner .self-introduction {
   height: 80vh;
-  background-color: blue;
-  background-image: url("images/mylogo.png");
-  background-size: contain ;
-  
-  
+  background-image: url("images/dog.png");
+  background-size: cover;
+}
+main section .main-content .content-inner .self-introduction .moji{
+  width: 35%;
+  line-height: 2rem;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: white;
 }
 main section .main-content .content-inner .self-portofolio_1{
+  background-image: url("images/6.png");
+  background-size: cover;
   height: 80vh;
-  background-color: aqua;
 }
+
+main section .main-content .content-inner .moji{
+  width: 35%;
+  line-height: 2rem;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+main section .main-content .content-inner .moji h2{
+  padding-bottom: 40px;
+}
+
 main section .main-content .content-inner .self-portofolio_2{
   height: 80vh;
-  background-color: aliceblue;
+  background-color: red;
+  background-image: url("images/predict.png");
+  background-size: cover ;
+
+  color: white;
 }
 main section .main-content .content-inner .self-portofolio_3{
   height: 80vh;
-  background-color: blueviolet;
+  background-image: url("images/movie.png");
+  background-size: cover;
 }
 main section .main-content .content-inner .self-portofolio_4{
   height: 80vh;
-  background-color: i;
+  background-image: url("images/bil.png");
+  background-size: cover;
+  color: white;
 }
 
 
