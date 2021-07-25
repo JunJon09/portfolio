@@ -23,39 +23,26 @@ crossorigin="anonymous"></script>
           </header>
           <nav id="global-nav">
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="#1">自己紹介</a></li>
               <li class="sub-menu">
-                <a href="#">About</a>
+                <a href="#2">アプリ</a>
                 <ul class="sub-menu-nav">
-                  <li><a href="#">rgjijrijgorjogjrojo</a></li>
-                  <li><a href="#">About 2</a></li>
-                  <li><a href="#">About 3</a></li>
-                  <li><a href="#">About 4</a></li>
-                  <li><a href="#">About 5</a></li>
-                  <li><a href="#">About 6</a></li>
+                  <li><a href="#2">Webアプリ</a></li>
+                  <li><a href="#3">iPhoeアプリ</a></li>
                 </ul>
               </li>
               <li class="sub-menu">
-                <a href="#">Products</a>
+                <a href="#4">プログラミング</a>
                 <ul class="sub-menu-nav">
-                  <li><a href="#">Product 1</a></li>
-                  <li><a href="#">Product 2</a></li>
-                  <li><a href="#">Product 3</a></li>
-                  <li><a href="#">Product 4</a></li>
-                  <li><a href="#">Product 5</a></li>
-                  <li><a href="#">Product 6</a></li>
+                  <li><a href="#4">AIを使った株予測</a></li>
                 </ul>
               </li>
               <li class="sub-menu">
-                <a href="#">Link</a>
+                <a href="#5">その他</a>
                 <ul class="sub-menu-nav">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#5">PV動画</a></li>
                 </ul>
               </li>
-              <li><a href="#">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -75,25 +62,23 @@ crossorigin="anonymous"></script>
     });
 })(jQuery);
 </script>
-      
-      <div class="aside-picture">
+      <article>
         <div class="aside-picuter-content">
-          <h2>動く写真載せたい。</h2>
+          <img src="images/sun.jpg" alt="dog">
         </div>
-      </div>
-      
+      </article>  
     </aside>
-    <section>
+    <section id="box">
       <div class="main-content">
         <div class="content-inner">
-          <div class="self-introduction">
+          <div class="self-introduction" id="1">
             <div class="moji">
               <h2>自己紹介</h2>
               <ul class="introduction_table">
                 <li>名前: 柴田　惇</li>
                 <li>所属: 愛知工業大学情報科学科</li>
                 <li>出身地: 愛知県扶桑町</li>
-                <li>趣味: ビリヤード,野球観戦</li>
+                <li>趣味: ビリヤード, 野球観戦</li>
                 <li>使える言語: C言語,Java,Ruby, Python, 英語</li>
                 <li>これから取り組みたいこと: ログイン機能を持ったWebアプリを作る。それを作る過程でセキュリティ、デザイン、データベース、ネットワークについて理解できるようになりたいです。
                 </li>
@@ -101,7 +86,7 @@ crossorigin="anonymous"></script>
             </div>
            
           </div>
-          <div class="self-portofolio_1">
+          <div class="self-portofolio_1" id="2">
             <div class="moji">
               <h2>Webアプリ</h2>
               <p>Rubyという言語を使いWebアプリを作りました。<br>アプリの概要は、ログインをして、野球の情報（プロ野球、高校野球、メジャーリーグ）などの色々な分野について、話し合いの場を提供するものです。<br>なぜを作ろうと思ったきっかけは、自分が野球好きの人と話したいということと、色々のWebニュースなどのコメントでたくさんの人たちがそこで意見を行っていたので需要あると感じたからです。<br>
@@ -109,27 +94,31 @@ crossorigin="anonymous"></script>
               </p>
             </div>
             
+            
 
           </div>
-          <div class="self-portofolio_2">
+          <div class="self-portofolio_2"id="3">
             <div class="moji">
-              <h2>AIを使った株予測</h2>
-              <p>pythonという言語を使って作りました。<br>3年間から4年間のデータを下に次の一週間、または一か月を上がるか下がるか４段回で予想するものです。<br>
-                しかし成功率が50%であったのであまり実戦では使えません。時間があればこのコードを修正して80%ぐらいの精度を目指したいです。
-              </p>
+              
+              <h2>iPhoeアプリ</h2>
+              <p>Swiftという言語を使いアプリを作りました。<br>アプリはビリヤードのゲームの一つナインボールのカウントするです。<br>大変だった点として、ユーザーが正しくないとこに入力した時にエラーが起きるようにするということです。<br>そのアプリをAppleStoreに出せるように改良をしたいと考えています。</p>
             </div>
     
           </div>
-          <div class="self-portofolio_3">
+          <div class="self-portofolio_3" id="4">
+            <div class="moji">
+              <h2>AIを使った株予測</h2>
+              <p>pythonという言語を使って作りました。<br>3年間から4年間のデータを下に次の一週間、または一か月を上がるか下がるか４段回で予想するものです。<br>
+               しかし成功率が50%であったのであまり実戦では使えません。時間があればこのコードを修正して80%ぐらいの精度を目指したいです。
+              </p>
+            </div>
+            
+          </div>
+
+          <div class="self-portofolio_4" id="5">
             <div class="moji">
               <h2>PV動画</h2>
               <p>学校の授業でPVの動画を作りました。<br>「ダイヤのA」というアニメを福山雅治『甲子園』の歌を使いPV動画を作成しました。<br>苦労したことは、歌詞の意味と動画の内容をリンクさせないといけないのでそれが難しかったです。</p>
-            </div>
-          </div>
-          <div class="self-portofolio_4">
-            <div class="moji">
-              <h2>iPhoeアプリ</h2>
-            <p>Swiftという言語を使いアプリを作りました。<br>アプリはビリヤードのゲームの一つナインボールのカウントするです。<br>大変だった点として、ユーザーが正しくないとこに入力した時にエラーが起きるようにするということです。<br>そのアプリをAppleStoreに出せるように改良をしたいと考えています。</p>
             </div>
           </div>
         </div>
